@@ -10,27 +10,22 @@ html, body {
   min-height: 100%;
 }
 
-body {
-
-}
-
-
 .fullscreen-img {
   display:block;
   z-index:1;
   min-width:100%;
   min-height:100%;
-  background:transparent url('../img/orchid.jpg') center center no-repeat;
+  background:transparent url('../img/tea-cup.jpg') center center no-repeat;
+  border-bottom: 2em solid rgba(253, 249, 237, 0.86);
 }
 
 .content-area {
   padding: 3%;
-  border-top: $border-accent;
 }
 
-
-.name h1 {
-  text-shadow: 2px 3px 0px #8EE7E7;
+.top-bar-section ul li > a, .top-bar-section ul li > a:active, .top-bar-section ul li > a:visited {
+  text-transform: uppercase;
+  transition: background 0.5s ease;
 }
 
 
