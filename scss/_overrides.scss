@@ -12,7 +12,7 @@ html, body {
   display:block;
   z-index:1;
   min-width:100%;
-  height: 70%;
+  height: 99%;
   background:transparent url('../img/orchid.jpg') center center no-repeat;
   border-bottom: 50px solid rgba(177, 99, 163, 0.36);
 }
@@ -22,7 +22,7 @@ html, body {
 }
 
 .full-width {
-  padding: 3%;
+  padding: 4%;
 }
 
 .top-bar-section ul li > a, .top-bar-section ul li > a:active, .top-bar-section ul li > a:visited {
@@ -38,7 +38,7 @@ html, body {
 }
 
 .logo {
-  margin: 12% 0 0 0;
+  margin: 20% 0 0 0;
   text-align: center;
 }
 
@@ -50,7 +50,7 @@ html, body {
 
 h2 {
   text-shadow: 3px 4px 1px rgba(46, 240, 248, 0.42);
-  border-bottom: 4px solid rgb(204, 248, 170)
+  border-bottom: 4px solid rgb(204, 248, 170);
 }
 
 .stripe {
