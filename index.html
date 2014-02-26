@@ -65,11 +65,18 @@
         <h2>Our Services</h2>
       </div>
       <div class="row">
-          <a class="fancybox" href="img/700.gif" data-fancybox-group="gallery" title="Sample Title"><img class="large-4 columns" src="img/400.gif"/></a>
+        <div id="masonryContainer" class="large-12 columns">
 
-          <a class="fancybox" href="img/700.gif" data-fancybox-group="gallery" title="Sample Title"><img class="large-4 columns" src="img/400.gif"/></a>
-
-          <a class="fancybox" href="img/700.gif" data-fancybox-group="gallery" title="Sample Title"><img class="large-4 columns" src="img/400.gif"/></a>
+          <div class="masonry-brick">
+            <a class="fancybox" href="img/700.gif" data-fancybox-group="gallery" title="Sample Title"><img src="img/400.gif"/></a>
+          </div>
+          <div class="masonry-brick">
+            <a class="fancybox" href="img/700.gif" data-fancybox-group="gallery" title="Sample Title"><img src="img/400.gif"/></a>
+          </div>
+          <div class="masonry-brick">
+            <a class="fancybox" href="img/700.gif" data-fancybox-group="gallery" title="Sample Title"><img src="img/400.gif"/></a>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -86,7 +93,11 @@
     <script src="bower_components/jquery/jquery.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/app.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
 
+    <!-- Fancybox resources -->
     <!-- Add fancyBox main JS and CSS files -->
     <script type="text/javascript" src="source/jquery.fancybox.js"></script>
     <link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css" media="screen">
@@ -107,5 +118,35 @@
         $(".fancybox").fancybox();
       });
     </script>
+    <!-- End Fancybox resources -->
+
+    <!-- Masonry resources -->
+    <script src="bower_components/eventEmitter/EventEmitter.js"></script>
+    <script src="bower_components/eventie/eventie.js"></script>
+    <script src="bower_components/doc-ready/doc-ready.js"></script>
+    <script src="bower_components/get-style-property/get-style-property.js"></script>
+    <script src="bower_components/get-size/get-size.js"></script>
+    <script src="bower_components/jquery-bridget/jquery.bridget.js"></script>
+    <script src="bower_components/matches-selector/matches-selector.js"></script>
+    <script src="bower_components/outlayer/item.js"></script>
+    <script src="bower_components/outlayer/outlayer.js"></script>
+    <script src="bower_components/masonry/masonry.js"></script>
+    <script type="text/javascript">
+      $(window).load(function(){
+        $('#masonryContainer').masonry({
+          itemSelector: '.masonry-brick',
+          columnWidth: 240
+        });
+      });
+    </script>
+
+    <script>
+      // var container = document.querySelector('#container')
+      // container = new Masonry( container, {
+      //   itemSelector: '.item',
+      //   columnWidth: 900
+      // });
+    </script>
+
   </body>
 </html>
