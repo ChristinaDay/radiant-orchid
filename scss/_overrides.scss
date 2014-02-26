@@ -17,8 +17,12 @@ html, body {
   border-bottom: 50px solid rgba(177, 99, 163, 0.36);
 }
 
-.about-content {
-  border-top: 4px solid #EAF31C;
+.content-area {
+  border-top: 4px solid rgb(247, 181, 129);
+}
+
+.services-content {
+  background-color: rgb(255, 252, 244);
 }
 
 .full-width {
@@ -31,7 +35,10 @@ html, body {
 }
 
 .masonry-brick { width: 220px; margin: 10px; float: left;  }
-#masonryContainer { width: 0 auto; }
+#masonryContainer {
+  width: 0 auto;
+  margin: 0 5% 0 5%;
+}
 
 .name {
    height: 0px;
