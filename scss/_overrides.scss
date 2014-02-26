@@ -17,9 +17,12 @@ html, body {
   border-bottom: 50px solid rgba(177, 99, 163, 0.36);
 }
 
-.content-area {
+.about-content {
+  border-top: 4px solid #EAF31C;
+}
+
+.full-width {
   padding: 3%;
-  border-top: 4px solid rgba(46, 240, 248, 0.42);
 }
 
 .top-bar-section ul li > a, .top-bar-section ul li > a:active, .top-bar-section ul li > a:visited {
@@ -40,7 +43,27 @@ html, body {
 }
 
 .logo h1 {
-  color: #FDF9ED;
+  color: #fff;
   font-size: 5em;
   text-shadow: 4px 7px 1px rgba(46, 240, 248, 0.42);
+}
+
+h2 {
+  text-shadow: 3px 4px 1px rgba(46, 240, 248, 0.42);
+  border-bottom: 4px solid rgb(204, 248, 170)
+}
+
+.stripe {
+  background-color: rgba(245, 253, 37, 0.75);
+  height: 4px;
+}
+.top-bar ul li {
+  border-bottom: 4px solid rgba(46, 240, 248, 0.11);
+}
+.top-bar-section ul:first-child {
+  margin: 0 0 0 4%;
+}
+
+.top-bar-section ul:last-child {
+  margin: 0 4% 0 0;
 }
